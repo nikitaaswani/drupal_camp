@@ -1,0 +1,32 @@
+@import "utilities/mixin";
+@import "utilities/variable";
+
+ul.menu{
+  display: $f;
+  justify-content: center;
+  list-style: none outside;
+  text-transform: uppercase;
+  text-align: center;
+  margin:0px;
+  a.is-active {
+    color: #e6103e;
+    border-bottom: 2px solid #e6103e;
+  }
+}
+.menu-item {
+  a {
+    text-decoration: none;
+    color: dimgrey;
+    display: block;
+    font-size: 16px;
+    padding: 34px 58px;
+    }
+}
+img.image-style-banner{
+    width:100%;
+}
+
+
+
+
+

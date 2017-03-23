@@ -1,0 +1,30 @@
+@import "utilities/variable";
+
+#block-internship2017-madewithlovebyqed42 {
+  background-color: aliceblue;
+    p {
+      text-align: right;
+      padding-right: 10%;
+      color: #c3bcbc;
+      margin: 0px;
+      padding-bottom: 1%;
+    }
+}
+#block-internship2017-followus {
+  background-color: black;
+    .follow-us {
+      background-color: black;
+      color: white;
+      display: $f;
+      margin: 0px;
+      padding: 11px 12%;
+      float: right;
+    }
+    .image1 {
+      width: 21px;
+      padding: 0 13px;
+    }
+    img {
+      width: 100%;
+    }
+}

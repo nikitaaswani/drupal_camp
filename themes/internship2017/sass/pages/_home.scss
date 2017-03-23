@@ -1,0 +1,82 @@
+@import "components/header";
+@import "block/oursponsors";
+@import "block/helpus";
+@import "block/venue";
+@import "components/footer";
+
+.tickets{
+  display:$f;
+  @include width-margin(70%);
+  .ticket1,.ticket2{
+    @include tickets-common;
+  }
+  #{selector-nest(".ticket1,.ticket2","p")}
+  {
+    @include tickets-para;
+  }
+  #{selector-nest(".ticket1,.ticket2","a")}
+  {
+    @include tickets-anchor;
+  }
+}
+.ticket1{
+  float: left;
+  a{
+    padding: 13px 23px;
+  }
+}
+.ticket2 {
+  float: right;
+  a{
+    padding: 13px 64px;
+  }
+}
+.main-wrapper {
+  background-color: #f7f9fb;
+  .class-wrapper{
+    display: $f;
+    @include width-margin(70%);
+    background-color: #f7f9fb;
+      .keynote-speaker {
+        h1 {
+          margin-top: 43%;
+          font-size: 18px;
+          color: $c;
+        }
+        p {
+          color: gray;
+          font-size: 14px;
+        }
+      }
+  }
+}
+.events-wrapper{
+  h1 {
+    @include width-margin(50%);
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 8%;
+    color: $c;
+  }
+  .events {
+    display: $f;
+    @include width-margin(80%);
+    justify-content: space-around;
+      .event1,.event2,.event3 {
+        width:30%;
+          img {
+            width:100%;
+            height: 185px;
+            border-radius: 5px 5px 0 0;
+          }
+          h1 {
+            text-align: left;
+            margin: 0px;
+            font-size: 16px;
+            color: $c;
+            padding-bottom: 4%;
+            padding-top: 20%;
+          }
+      }
+  }
+}

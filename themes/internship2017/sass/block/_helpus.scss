@@ -1,0 +1,23 @@
+@import "utilities/mixin";
+@import "utilities/variable";
+
+#block-internship2017-helpusmakethisanawesomeexperience{
+  margin-top:7%;
+    .help-us {
+      @include width-margin(40%);
+      .para p {
+        color: gray;
+        text-align: center;
+        margin-bottom: 10%;
+      }
+      .link-help-us{
+        p {
+        text-align: center;
+        }
+        a {
+          @include tickets-anchor;
+          padding: 13px 23px;
+        }
+      }
+    }
+}

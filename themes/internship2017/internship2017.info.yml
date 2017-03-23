@@ -1,0 +1,18 @@
+name: internship2017
+type: theme
+base theme: classy
+core: '8.x'
+description: 'A flexible, recolorable theme with many regions and a responsive, mobile-first layout.'
+
+libraries:
+  - internship2017/global
+
+regions:
+  header: Header
+  header_bottom: 'Header bottom'
+  content: Content
+  content_bottom: 'Content bottom'
+  footer_top: 'Footer top'
+  footer: footer
+
+

@@ -1,0 +1,32 @@
+@import "utilities/mixin";
+@import "utilities/variable";
+
+#block-internship2017-venue-2 {
+  background-color: aliceblue;
+  h2 {
+    @include heading;
+    padding-top: 3%;
+  }
+  .venue {
+    @include width-margin(70%);
+    display: $f;
+    padding: 3% 0;
+      .text {
+        color: gray;
+          p.first-para {
+            color: black;
+          }
+        .secon-para {
+          padding: 1px;
+        }
+        button {
+          border: 1px solid white;
+          box-shadow: -5px 5px 6px #888888;
+          background-color: white;
+        }
+      }
+      .map {
+        padding-left: 10%;
+      }
+  }
+}

@@ -1,0 +1,30 @@
+@import "utilities/variable";
+@mixin tickets-common{
+  width: 50%;
+  padding: 37px;
+  text-align: center;
+  margin-left: 56px;
+}
+@mixin tickets-para{
+  margin-bottom: 30px;
+  color: gray;
+  font-size: 18px;
+}
+@mixin tickets-anchor{
+  border: 2px solid #e6103e;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: #e6103e;
+  color: white;
+}
+@mixin width-margin($width) {
+  width:$width;
+  margin:0 auto;
+}
+@mixin heading {
+  font-size: 32px;
+  color: $c;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 10%;
+}
