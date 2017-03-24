@@ -1,7 +1,7 @@
 @import "utilities/mixin";
 @import "utilities/variable";
 
-#block-internship2017-venue-2 {
+#block-internship2017-venue-2,#block-venue-3 {
   background-color: aliceblue;
   h2 {
     @include heading;
@@ -29,4 +29,7 @@
         padding-left: 10%;
       }
   }
+}
+#block-venue-3 h2{
+  margin-top:0px;
 }

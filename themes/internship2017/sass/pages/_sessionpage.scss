@@ -1,0 +1,37 @@
+@import "components/header";
+@import "block/venue";
+@import "components/footer";
+
+.selection-criteria {
+  width: 90%;
+  margin: 0 auto;
+  h1 {
+    @include heading;
+    font-size:28px;
+    margin-top:7%;
+  }
+  p {
+    font-size: 16px;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    color: gray;
+    padding: 4% 0;
+  }
+    .links {
+      padding: 29px 20px;
+      width: 80%;
+      display: flex;
+      justify-content: space-around;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      a {
+        @include tickets-anchor;
+        width: 12%;
+        padding: 12px 30px;
+        text-align: center;
+        margin: 40px 30px;
+        font-size:16px;
+      }
+    }
+}

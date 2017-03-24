@@ -26,6 +26,26 @@ img.image-style-banner{
     width:100%;
 }
 
+#block-internship2017-sessionbanner {
+  position: relative;
+    .session-banner {
+      position: absolute;
+      bottom: 20%;
+      left: 12%;
+      h1 {
+        color: white;
+        font-size: 28px;
+        word-spacing: 5px;
+        margin: 12px 0px;
+      }
+      a {
+        @include tickets-anchor;
+        padding: 8px 23px;
+        font-size: 14px;
+      }
+    }
+}
+
 
 
 
