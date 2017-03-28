@@ -8,6 +8,7 @@ libraries:
   - internship2017/global
 
 regions:
+  header_top: 'Header top'
   header: Header
   header_bottom: 'Header bottom'
   content: Content

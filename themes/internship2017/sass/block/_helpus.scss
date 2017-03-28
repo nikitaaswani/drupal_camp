@@ -5,6 +5,10 @@
   margin-top:7%;
     .help-us {
       @include width-margin(40%);
+      @include breakpoint($tablet) {
+        width: 100%;
+        padding-top: 10%;
+      }
       .para p {
         color: gray;
         text-align: center;

@@ -1,0 +1,153 @@
+@import "breakpoint";
+@import "components/header";
+@import "block/venue";
+@import "components/footer";
+
+.pune-drupal-group {
+  @include breakpoint($mobile) {
+    padding-top: 10%;
+  }
+  h2 {
+    @include heading;
+    font-size:28px;
+    margin:3% 0;
+  }
+  p {
+    @include width-margin(80%);
+    color:gray;
+    line-height: 20px;
+    margin-bottom: 2%;
+  }
+}
+
+.what-should-wrapper {
+  background-color: #eef2f3;
+  padding-bottom: 5%;
+  margin: 3% 0;
+    .what-should {
+      background-color: #eef2f3;
+      display: $f;
+      @include width-margin(70%);
+      @include breakpoint($tablet) {
+        width: 90%;
+        justify-content: space-around;
+      }
+      @include breakpoint($mobile) {
+        display: block;
+      }
+        .bring,.expect {
+          width:50%;
+          @include breakpoint($tablet) {
+            width: 45%;
+          }
+          @include breakpoint($mobile) {
+            width: 100%;
+            padding: 3% 0;
+          }
+            h2 {
+              font-size: 12px;
+              color: $c;
+              text-align: center;
+              text-transform: uppercase;
+              margin-top: 10%;
+            }
+            p {
+              border: 1px solid white;
+              box-shadow: -3px 3px 6px #888888;
+              background-color: white;
+              padding: 23px 44px;
+              font-size: 14px;
+              @include width-margin(75%);
+              color: gray;
+              text-align: center;
+            }
+            a {
+              text-decoration: none;
+              color: $c;
+            }
+        }
+    }
+}
+
+#block-codeofconduct{
+  p {
+    width: 12%;
+    margin: 2% auto;
+    @include breakpoint($tablet) {
+      width: 100%;
+      text-align: center;
+    }
+    @include breakpoint($mobile) {
+      padding: 8% 0;
+    }
+  }
+  a {
+    border: 2px solid #e6103e;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #e6103e;
+    color: white;
+    padding: 13px 23px;
+  }
+}
+
+.drupal-camp-pune {
+  h2 {
+    font-size: 30px;
+    color: #0a6cc1;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 6%;
+  }
+  p {
+    @include width-margin(60%);
+    color: gray;
+    text-align: center;
+    margin-bottom: 4%;
+    @include breakpoint($mobile) {
+      width: 90%;
+    }
+  }
+    .image-wrapper {
+      @include width-margin(80%);
+      display: $f;
+      justify-content: space-around;
+      @include breakpoint($tablet) {
+        width: 100%;
+      }
+      @include breakpoint($mobile) {
+        width: 90%;
+        display: block;
+      }
+        .camp-image1,.camp-image2,.camp-image3 {
+          width:30%;
+          @include breakpoint($mobile) {
+            padding-bottom: 8%;
+            width: 100%;
+          }
+          img {
+            width: 100%;
+            height: 210px;
+            @include breakpoint($tablet) {
+              height: 175px;
+            }
+          }
+          h2 {
+            color: $c;
+            font-size: 18px;
+            text-align: left;
+          }
+          p {
+            color:gray;
+            text-align: left;
+            margin: 0px;
+            @include breakpoint($tablet) {
+              font-size: 15px;
+            }
+            @include breakpoint($mobile) {
+              width: 100%;
+            }
+          }
+        }
+    }
+}

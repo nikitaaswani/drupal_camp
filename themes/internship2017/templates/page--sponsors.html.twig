@@ -1,0 +1,35 @@
+<div class='page-wrapper'>
+  <div class='header'>
+   <div class="header-top">
+          {{ page.header_top }}
+    </div>
+    <div class='header-wrappper'>
+      {{page.header}}
+    </div>
+    {% if page.header_bottom %}
+        <div id="header-bottom">
+          {{ page.header_bottom }}
+        </div>
+    {% endif %}
+  </div>
+  <div class='content'>
+    <div class='main-content'>
+      {{page.content}}
+    </div>
+    {% if page.content_bottom %}
+        <div id="content-bottom">
+          {{ page.content_bottom }}
+        </div>
+    {% endif %}
+  </div>
+  <div class='footer-wrapper'>
+    {%if page.footer_top %}
+      <div class='footer-top'>
+        {{page.footer_top}}
+      </div>
+    {% endif %}
+    <div class='footer'>
+      {{page.footer}}
+    </div>
+  </div>
+</div>

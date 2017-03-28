@@ -2,21 +2,39 @@
 @import "utilities/variable";
 
 #block-internship2017-views-block-our-sponsors-block-1,.view-our-sponsors {
+  @include breakpoint($tablet) {
+    padding-bottom: 0px;
+  }
   h2{
     @include heading;
+    @include breakpoint($tablet) {
+      font-size: 45px;
+    }
   }
   .view-content {
     display: $f;
     flex-wrap: wrap;
     justify-content: space-around;
     @include width-margin(50%);
+    @include breakpoint($tablet) {
+      width: 100%;
+    }
+    @include breakpoint($mobile) {
+      display: block;
+    }
       .views-row {
         width:30%;
+        @include breakpoint($mobile) {
+          width: 100%;
+        }
           .field-content {
             display: $f;
             justify-content: center;
             align-items: center;
             padding: 14%;
+            @include breakpoint($tablet) {
+              padding: 0px;
+            }
           }
       }
   }

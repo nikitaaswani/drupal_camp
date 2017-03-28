@@ -6,11 +6,20 @@
   h2 {
     @include heading;
     padding-top: 3%;
+    @include breakpoint($tablet) {
+      font-size: 41px;
+    }
   }
   .venue {
     @include width-margin(70%);
     display: $f;
     padding: 3% 0;
+    @include breakpoint($tablet) {
+      width: 100%;
+    }
+    @include breakpoint($mobile) {
+      display: block;
+    }
       .text {
         color: gray;
           p.first-para {
@@ -24,9 +33,24 @@
           box-shadow: -5px 5px 6px #888888;
           background-color: white;
         }
+        @include breakpoint($tablet) {
+          padding-left: 4%;
+        }
+        @include breakpoint($mobile) {
+          padding-left: 10%;
+        }
       }
       .map {
         padding-left: 10%;
+        @include breakpoint($tablet) {
+          padding: 0px;
+          width: 100%;
+        }
+        @include breakpoint($mobile) {
+          img {
+            width: 100%;
+          }
+        }
       }
   }
 }

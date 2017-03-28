@@ -5,11 +5,25 @@
 @import "components/footer";
 
 #block-internship2017-benefitsofbeingasponsor {
-  @include heading;
-  font-size:28px;
+  h2 {
+    @include heading;
+    font-size:28px;
+    @include breakpoint($tablet) {
+      width: 100%;
+    }
+    @include breakpoint($mobile) {
+      font-size: 22px;
+    }
+  }
     .benefits {
       display: $f;
       @include width-margin(80%);
+      @include breakpoint($tablet) {
+        width: 100%;
+      }
+      @include breakpoint($mobile) {
+        display: block;
+      }
         .benefit1,.benefit2,.benefit3 {
           padding: 4%;
           p.benefit-heading {
