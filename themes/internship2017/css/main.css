@@ -69,7 +69,14 @@ img.image-style-banner {
   word-spacing: 5px;
   margin: 12px 0px;
 }
-/* line 57, ../sass/components/_header.scss */
+@media screen and (max-width: 425px) {
+  /* line 51, ../sass/components/_header.scss */
+  #block-internship2017-sessionbanner .session-banner h1 {
+    font-size: 20px;
+    word-spacing: 4px;
+  }
+}
+/* line 61, ../sass/components/_header.scss */
 #block-internship2017-sessionbanner .session-banner a {
   border: 2px solid #e6103e;
   text-decoration: none;
@@ -682,7 +689,14 @@ img.image-style-banner {
   font-size: 28px;
   margin-top: 7%;
 }
-/* line 13, ../sass/pages/_sessionpage.scss */
+@media screen and (max-width: 425px) {
+  /* line 8, ../sass/pages/_sessionpage.scss */
+  .selection-criteria h1 {
+    font-size: 20px;
+    margin-top: 22%;
+  }
+}
+/* line 17, ../sass/pages/_sessionpage.scss */
 .selection-criteria p {
   font-size: 16px;
   text-align: center;
@@ -692,12 +706,20 @@ img.image-style-banner {
   padding: 4% 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 13, ../sass/pages/_sessionpage.scss */
+  /* line 17, ../sass/pages/_sessionpage.scss */
   .selection-criteria p {
     width: 90%;
   }
 }
-/* line 23, ../sass/pages/_sessionpage.scss */
+@media screen and (max-width: 425px) {
+  /* line 17, ../sass/pages/_sessionpage.scss */
+  .selection-criteria p {
+    width: 100%;
+    text-align: justify;
+    font-size: 13px;
+  }
+}
+/* line 32, ../sass/pages/_sessionpage.scss */
 .selection-criteria .links {
   padding: 29px 20px;
   width: 80%;
@@ -707,13 +729,13 @@ img.image-style-banner {
   flex-wrap: wrap;
 }
 @media screen and (max-width: 768px) {
-  /* line 23, ../sass/pages/_sessionpage.scss */
+  /* line 32, ../sass/pages/_sessionpage.scss */
   .selection-criteria .links {
     width: 90%;
     padding: 0px;
   }
 }
-/* line 33, ../sass/pages/_sessionpage.scss */
+/* line 42, ../sass/pages/_sessionpage.scss */
 .selection-criteria .links a {
   border: 2px solid #e6103e;
   text-decoration: none;
@@ -727,14 +749,20 @@ img.image-style-banner {
   font-size: 16px;
 }
 @media screen and (max-width: 768px) {
-  /* line 33, ../sass/pages/_sessionpage.scss */
+  /* line 42, ../sass/pages/_sessionpage.scss */
   .selection-criteria .links a {
     padding: 12px 40px;
     margin: 40px 20px;
   }
 }
+@media screen and (max-width: 425px) {
+  /* line 42, ../sass/pages/_sessionpage.scss */
+  .selection-criteria .links a {
+    width: 30%;
+  }
+}
 
-/* line 48, ../sass/pages/_sessionpage.scss */
+/* line 60, ../sass/pages/_sessionpage.scss */
 .selection-committee h1 {
   font-size: 32px;
   color: #0a6cc1;
@@ -742,7 +770,13 @@ img.image-style-banner {
   text-transform: uppercase;
   margin-top: 5%;
 }
-/* line 55, ../sass/pages/_sessionpage.scss */
+@media screen and (max-width: 425px) {
+  /* line 60, ../sass/pages/_sessionpage.scss */
+  .selection-committee h1 {
+    font-size: 23px;
+  }
+}
+/* line 70, ../sass/pages/_sessionpage.scss */
 .selection-committee p {
   font-size: 16px;
   text-align: center;
@@ -751,8 +785,16 @@ img.image-style-banner {
   color: gray;
   padding: 4% 0;
 }
+@media screen and (max-width: 425px) {
+  /* line 70, ../sass/pages/_sessionpage.scss */
+  .selection-committee p {
+    width: 90%;
+    font-size: 16px;
+    padding: 10% 0;
+  }
+}
 
-/* line 63, ../sass/pages/_sessionpage.scss */
+/* line 83, ../sass/pages/_sessionpage.scss */
 .committee {
   padding: 29px 20px;
   width: 90%;
@@ -762,22 +804,36 @@ img.image-style-banner {
   flex-wrap: wrap;
 }
 @media screen and (max-width: 768px) {
-  /* line 63, ../sass/pages/_sessionpage.scss */
+  /* line 83, ../sass/pages/_sessionpage.scss */
   .committee {
     width: 100%;
     padding: 0px;
   }
 }
-/* line 73, ../sass/pages/_sessionpage.scss */
+@media screen and (max-width: 425px) {
+  /* line 83, ../sass/pages/_sessionpage.scss */
+  .committee {
+    display: block;
+  }
+}
+/* line 96, ../sass/pages/_sessionpage.scss */
 .committee .committee1, .committee .committee2, .committee .committee3, .committee .committee4 {
   width: 22%;
 }
-/* line 75, ../sass/pages/_sessionpage.scss */
+@media screen and (max-width: 425px) {
+  /* line 96, ../sass/pages/_sessionpage.scss */
+  .committee .committee1, .committee .committee2, .committee .committee3, .committee .committee4 {
+    width: 90%;
+    margin: 0px auto;
+    padding-bottom: 10%;
+  }
+}
+/* line 103, ../sass/pages/_sessionpage.scss */
 .committee .committee1 img, .committee .committee2 img, .committee .committee3 img, .committee .committee4 img {
   width: 100%;
   height: 178px;
 }
-/* line 79, ../sass/pages/_sessionpage.scss */
+/* line 107, ../sass/pages/_sessionpage.scss */
 .committee .committee1 h3, .committee .committee2 h3, .committee .committee3 h3, .committee .committee4 h3 {
   text-align: left;
   margin: 0px;
@@ -786,9 +842,22 @@ img.image-style-banner {
   padding-bottom: 4%;
   padding-top: 12%;
 }
-/* line 87, ../sass/pages/_sessionpage.scss */
+@media screen and (max-width: 425px) {
+  /* line 107, ../sass/pages/_sessionpage.scss */
+  .committee .committee1 h3, .committee .committee2 h3, .committee .committee3 h3, .committee .committee4 h3 {
+    padding-bottom: 0px;
+    padding-top: 6%;
+  }
+}
+/* line 119, ../sass/pages/_sessionpage.scss */
 .committee .committee1 p, .committee .committee2 p, .committee .committee3 p, .committee .committee4 p {
   color: gray;
+}
+@media screen and (max-width: 425px) {
+  /* line 119, ../sass/pages/_sessionpage.scss */
+  .committee .committee1 p, .committee .committee2 p, .committee .committee3 p, .committee .committee4 p {
+    margin-top: 3%;
+  }
 }
 
 @media screen and (max-width: 425px) {
