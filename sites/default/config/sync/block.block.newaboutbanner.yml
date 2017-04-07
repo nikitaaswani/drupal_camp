@@ -1,0 +1,31 @@
+uuid: 852a2676-5095-47c5-a690-2a6b4c8c6896
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:session_banner:a8fd0b09-bd56-4cb7-a893-f09f4007ee0b'
+  module:
+    - block_content
+    - system
+  theme:
+    - internship2017
+id: newaboutbanner
+theme: internship2017
+region: header_bottom
+weight: 0
+provider: null
+plugin: 'block_content:a8fd0b09-bd56-4cb7-a893-f09f4007ee0b'
+settings:
+  id: 'block_content:a8fd0b09-bd56-4cb7-a893-f09f4007ee0b'
+  label: 'New About Banner'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /about
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,22 @@
+uuid: f11bd83b-5b77-4179-844f-068752579290
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - internship
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: internship_content
+theme: internship
+region: content
+weight: -8
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

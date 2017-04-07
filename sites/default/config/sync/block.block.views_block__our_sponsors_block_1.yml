@@ -1,0 +1,30 @@
+uuid: b1ab1c85-dae2-4a9b-a850-f835c7cc2ec1
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.our_sponsors
+  module:
+    - system
+    - views
+  theme:
+    - internship
+id: views_block__our_sponsors_block_1
+theme: internship
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:our_sponsors-block_1'
+settings:
+  id: 'views_block:our_sponsors-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

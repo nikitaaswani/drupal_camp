@@ -1,0 +1,31 @@
+uuid: f095ff01-af04-4fe4-a4f2-f1c5d90c9fce
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e54ffdcb-06f4-4edc-b683-456a50d60f86'
+  module:
+    - block_content
+    - system
+  theme:
+    - internship
+id: internship_venue
+theme: internship
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:e54ffdcb-06f4-4edc-b683-456a50d60f86'
+settings:
+  id: 'block_content:e54ffdcb-06f4-4edc-b683-456a50d60f86'
+  label: Venue
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /session
+    negate: false
+    context_mapping: {  }

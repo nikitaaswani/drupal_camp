@@ -1,0 +1,25 @@
+uuid: 5ad68f00-412f-4085-a25f-28121e78859c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0fcf01f3-71d2-459b-97a6-f149378ad03b'
+  module:
+    - block_content
+  theme:
+    - internship
+id: followus
+theme: internship
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:0fcf01f3-71d2-459b-97a6-f149378ad03b'
+settings:
+  id: 'block_content:0fcf01f3-71d2-459b-97a6-f149378ad03b'
+  label: 'Follow us '
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

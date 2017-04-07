@@ -1,0 +1,24 @@
+uuid: 24d53839-a297-4d5d-8e3a-d95d06d81fbd
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - internship2017
+id: useraccountmenu
+theme: internship2017
+region: '-1'
+weight: -9
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

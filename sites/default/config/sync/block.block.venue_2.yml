@@ -1,0 +1,25 @@
+uuid: 9eb4352a-1d72-4fc6-abd9-f1ffab5549fc
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e54ffdcb-06f4-4edc-b683-456a50d60f86'
+  module:
+    - block_content
+  theme:
+    - internship
+id: venue_2
+theme: internship
+region: content_bottom
+weight: 0
+provider: null
+plugin: 'block_content:e54ffdcb-06f4-4edc-b683-456a50d60f86'
+settings:
+  id: 'block_content:e54ffdcb-06f4-4edc-b683-456a50d60f86'
+  label: Venue
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
