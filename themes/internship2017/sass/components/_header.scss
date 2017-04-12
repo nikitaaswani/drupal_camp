@@ -1,9 +1,23 @@
-@import "breakpoint";
-@import "utilities/mixin";
-@import "utilities/variable";
+/*------------------------------------*\
+    * @file
+    * Header.
+\*------------------------------------*/
 
-$tablet: screen (max-width 768px);
-$mobile: screen (max-width 425px);
+
+
+
+
+input.toggle, label.toggle { display: none; }
+
+label.toggle {
+  font-weight: 900;
+  font-size: 1.2em;
+  padding: 10px 20px;
+}
+
+.logopath1 {
+  display:none;
+}
 
 ul.menu{
   display: $f;
@@ -20,7 +34,7 @@ ul.menu{
   }
   a.is-active {
     color: #e6103e;
-    border-bottom: 2px solid #e6103e;
+    border-bottom: 3px solid #e6103e;
   }
 }
 .menu-item {
@@ -28,17 +42,35 @@ ul.menu{
     text-decoration: none;
     color: dimgrey;
     display: block;
-    font-size: 16px;
+    font-size: 18px;
     padding: 34px 58px;
-    @include breakpoint($tablet) {
+    @include breakpoint($laptop) {
       padding: 34px 25px;
     }
   }
 }
+
+#logopath img {
+  position: relative;
+  z-index: 2;
+  @include breakpoint($tablet) {
+    display: none;
+  }
+}
+
+img.logopath1 {
+  position: relative;
+  z-index: 2;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: -22px;
+}
 img.image-style-banner{
   width:100%;
-  @include breakpoint($tablet) {
-    height: 75vh;
+  height: auto;
+  margin-top: -25px;
+  @include breakpoint($mobile) {
+    margin-top: -9px;
   }
 }
 
@@ -66,7 +98,22 @@ img.image-style-banner{
     }
 }
 
+@media (max-width: 960px) {
 
+  ul.menu { display: none; }
+
+  input.toggle,  .toggle span { display: none; }
+
+  input[type=checkbox]:checked ~ ul.menu,  label.toggle {
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+  }
+  .logopath1 {
+    display:inline;
+  }
+
+}
 
 
 

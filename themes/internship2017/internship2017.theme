@@ -8,4 +8,10 @@ function internship2017_theme_suggestions_page_alter(array &$suggestions, array 
     $suggestions[] = 'page__'.$content_type;
   }
 }
-?>
+
+/**
+ * Implements hook_theme_preprocess
+ */
+function internship2017_preprocess_menu__main(&$variables) {
+$variables['logopath']= '/'. drupal_get_path('theme', 'internship2017') . '/logo.png';
+}

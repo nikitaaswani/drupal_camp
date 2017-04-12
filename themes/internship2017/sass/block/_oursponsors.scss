@@ -1,5 +1,4 @@
-@import "utilities/mixin";
-@import "utilities/variable";
+
 
 #block-internship2017-views-block-our-sponsors-block-1,.view-our-sponsors {
   @include breakpoint($tablet) {
@@ -10,22 +9,30 @@
     @include breakpoint($tablet) {
       font-size: 45px;
     }
+    @include breakpoint($mobile) {
+      margin-bottom: 10%;
+    }
   }
   .view-content {
     display: $f;
     flex-wrap: wrap;
     justify-content: space-around;
-    @include width-margin(50%);
+    @include width-margin(80%);
     @include breakpoint($tablet) {
       width: 100%;
     }
     @include breakpoint($mobile) {
       display: block;
+      margin-top: 5%;
     }
       .views-row {
         width:30%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
         @include breakpoint($mobile) {
           width: 100%;
+          margin-bottom: 7%;
         }
           .field-content {
             display: $f;

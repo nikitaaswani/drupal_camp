@@ -1,25 +1,28 @@
-@import "breakpoint";
-@import "components/header";
-@import "block/venue";
-@import "components/footer";
-
-.selection-criteria {
+/*------------------------------------*\
+    * @file
+    * Sessions Page.
+\*------------------------------------*/
+.selection-criteria-wrapper {
+  background-color: aliceblue;
+  .selection-criteria {
   @include width-margin(90%);
   h1 {
     @include heading;
-    font-size:28px;
-    margin-top:7%;
+    font-size: 28px;
+    padding-top: 5%;
+    margin-top:0;
     @include breakpoint($mobile) {
       font-size: 20px;
-      margin-top: 22%;
+      padding: 15% 0;
     }
   }
   p {
     font-size: 16px;
     text-align: center;
-    @include width-margin(60%);
+    @include width-margin(75%);
     color: gray;
     padding: 4% 0;
+    line-height: 18px;
     @include breakpoint($tablet) {
       width:90%;
     }
@@ -31,7 +34,7 @@
   }
   .links {
     padding: 29px 20px;
-    @include width-margin(80%);
+    width: 100%;
     display: $f;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -41,7 +44,7 @@
     }
     a {
       @include tickets-anchor;
-      width: 12%;
+      width: 20%;
       padding: 12px 30px;
       text-align: center;
       margin: 40px 30px;
@@ -51,11 +54,15 @@
         margin: 40px 20px;
       }
       @include breakpoint($mobile) {
-        width: 30%;
+        width: 45%;
+        margin: 40px 0px;
+        padding: 13px;
       }
     }
   }
 }
+}
+
 .selection-committee {
   h1 {
     font-size: 32px;
@@ -86,9 +93,8 @@
   display: $f;
   justify-content: space-around;
   flex-wrap: wrap;
-  @include breakpoint($tablet) {
+  @include breakpoint($laptop) {
     width: 100%;
-    padding: 0px;
   }
   @include breakpoint($mobile) {
     display: block;
@@ -100,9 +106,12 @@
         margin: 0px auto;
         padding-bottom: 10%;
       }
-      img {
+      .committee-img {
+        height: 156px;
+        img {
         width: 100%;
-        height: 178px;
+        height: 100%;
+        }
       }
       h3 {
         text-align: left;

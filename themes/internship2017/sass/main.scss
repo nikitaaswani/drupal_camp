@@ -1,4 +1,17 @@
+@import "breakpoint";
+//breakpoints
+$laptop: screen (max-width 1024px);
+$tablet: screen (max-width 768px);
+$mobile: screen (max-width 425px);
 
+@import "utilities/reset";
+@import "utilities/variable";
+@import "utilities/mixin";
+@import "components/footer";
+@import "components/header";
+@import "block/oursponsors";
+@import "block/helpus";
+@import "block/venue";
 @import "pages/homepage";
 @import "pages/sponsorspage";
 @import "pages/venuepage";

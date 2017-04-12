@@ -1,13 +1,12 @@
-@import "breakpoint";
-@import "components/header";
-@import "block/oursponsors";
-@import "block/helpus";
-@import "block/venue";
-@import "components/footer";
+/*------------------------------------*\
+    * @file
+    * Home Page.
+\*------------------------------------*/
 
 .tickets{
   display:$f;
   @include width-margin(70%);
+  margin: 5% auto;
   @include breakpoint($tablet) {
     display: block;
   }
@@ -24,6 +23,9 @@
   #{selector-nest(".ticket1,.ticket2","p")}
   {
     @include tickets-para;
+    @include breakpoint($laptop) {
+      font-size: 16px;
+    }
   }
   #{selector-nest(".ticket1,.ticket2","a")}
   {
@@ -65,9 +67,12 @@
           width: 100%;
         }
         h1 {
-          margin-top: 43%;
-          font-size: 18px;
+          margin: 18% 0;
+          font-size: 32px;
           color: $c;
+          @include breakpoint($laptop) {
+            font-size: 20px;
+          }
           @include breakpoint($mobile) {
             font-size: 26px;
             margin-top: 10%;
@@ -76,12 +81,17 @@
         }
         p {
           color: gray;
-          font-size: 14px;
+          font-size: 18px;
+          margin: 20px 0px;
+          line-height: 25px;
+          @include breakpoint($laptop) {
+            line-height: 20px;
+          }
           @include breakpoint($tablet) {
-            font-size: 17px;
+            font-size: 16px;
           }
           @include breakpoint($mobile) {
-            font-size: 22px;
+            font-size: 16px;
           }
         }
       }
@@ -92,37 +102,46 @@
             width: 100%;
           }
         }
+        @include breakpoint($mobile) {
+          width: 80%;
+          margin: 0 auto;
+        }
       }
   }
 }
 .events-wrapper{
+  @include breakpoint($mobile) {
+    margin-top: 15%;
+  }
   h1 {
     @include width-margin(50%);
     text-align: center;
     margin-top: 5%;
     margin-bottom: 8%;
     color: $c;
+    font-size: 32px;
   }
   .events {
     display: $f;
     @include width-margin(80%);
     justify-content: space-around;
-    @include breakpoint($tablet) {
+    @include breakpoint($mobile) {
       display: block;
     }
       .event1,.event2,.event3 {
         width:30%;
-        @include breakpoint($tablet) {
+        @include breakpoint($mobile) {
           width: 100%;
+          margin-top: 7%;
         }
+        .event_img {
+          height: 178px;
           img {
-            width:100%;
-            height: 185px;
+            width: 100%;
+            height: 100%;
             border-radius: 5px 5px 0 0;
-            @include breakpoint($tablet) {
-              height: 245px;
-            }
           }
+        }
           h1 {
             text-align: left;
             margin: 0px;
@@ -131,13 +150,19 @@
             padding-bottom: 4%;
             padding-top: 20%;
             @include breakpoint($tablet) {
-              padding-top: 5%;
+              padding: 5% 0;
+              font-size: 14px;
+            }
+            @include breakpoint($mobile) {
               padding-bottom: 0px;
             }
           }
           p {
             @include breakpoint($tablet) {
               padding-bottom: 8%;
+            }
+            @include breakpoint($mobile) {
+              padding: 4% 0;
             }
           }
       }

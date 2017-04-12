@@ -1,9 +1,7 @@
-@import "components/header";
-@import "block/oursponsors";
-@import "block/helpus";
-@import "block/venue";
-@import "components/footer";
-
+/*------------------------------------*\
+    * @file
+    * Sponsors Page.
+\*------------------------------------*/
 #block-internship2017-benefitsofbeingasponsor {
   h2 {
     @include heading;
@@ -18,24 +16,37 @@
     .benefits {
       display: $f;
       @include width-margin(80%);
-      @include breakpoint($tablet) {
+      @include breakpoint($laptop) {
         width: 100%;
-      }
-      @include breakpoint($mobile) {
         display: block;
       }
         .benefit1,.benefit2,.benefit3 {
           padding: 4%;
+          @include breakpoint($laptop) {
+            padding: 3%;
+          }
+          @include breakpoint($mobile) {
+            padding: 7% 3%;
+          }
           p.benefit-heading {
-            border-bottom: 1px solid black;
+            border-top:none;
             margin: 0px;
             padding-bottom: 9%;
+            margin-bottom:10px;
             text-transform: uppercase;
             font-size: 16px;
             text-align: left;
             color: black;
+             @include breakpoint($laptop) {
+              font-size: 20px;
+              padding-bottom: 3%;
+            }
+            @include breakpoint($mobile) {
+              font-size :16px;
+            }
           }
           p {
+            border-top: 1px solid black;
             color:gray;
             font-size: 16px;
             text-transform: none;

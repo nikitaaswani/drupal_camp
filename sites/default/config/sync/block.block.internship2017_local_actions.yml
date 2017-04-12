@@ -9,7 +9,7 @@ _core:
 id: internship2017_local_actions
 theme: internship2017
 region: '-1'
-weight: -11
+weight: -12
 provider: null
 plugin: local_actions_block
 settings:

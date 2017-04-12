@@ -11,7 +11,7 @@ dependencies:
 id: contactus_2
 theme: internship2017
 region: '-1'
-weight: 0
+weight: -15
 provider: null
 plugin: 'block_content:6ead2764-8757-40d3-808b-dad43c185e46'
 settings:

@@ -1,7 +1,7 @@
-@import "breakpoint";
-@import "components/header";
-@import "block/venue";
-@import "components/footer";
+/*------------------------------------*\
+    * @file
+    * About Us Page.
+\*------------------------------------*/
 
 .pune-drupal-group {
   @include breakpoint($mobile) {
@@ -27,7 +27,7 @@
     .what-should {
       background-color: #eef2f3;
       display: $f;
-      @include width-margin(70%);
+      @include width-margin(80%);
       @include breakpoint($tablet) {
         width: 90%;
         justify-content: space-around;
@@ -50,6 +50,7 @@
               text-align: center;
               text-transform: uppercase;
               margin-top: 10%;
+              padding-bottom: 15px;
             }
             p {
               border: 1px solid white;
@@ -73,6 +74,9 @@
   p {
     width: 12%;
     margin: 2% auto;
+    @include breakpoint($laptop) {
+      width: 20%;
+    }
     @include breakpoint($tablet) {
       width: 100%;
       text-align: center;
@@ -101,15 +105,19 @@
   }
   p {
     @include width-margin(60%);
+    margin: 20px auto;
     color: gray;
     text-align: center;
     margin-bottom: 4%;
+    @include breakpoint($laptop) {
+      margin: 30px auto;
+    }
     @include breakpoint($mobile) {
       width: 90%;
     }
   }
     .image-wrapper {
-      @include width-margin(80%);
+      @include width-margin(90%);
       display: $f;
       justify-content: space-around;
       @include breakpoint($tablet) {
@@ -139,8 +147,12 @@
           }
           p {
             color:gray;
-            text-align: left;
+            text-align: inherit;
             margin: 0px;
+            width: 100%;
+            @include breakpoint($laptop) {
+              margin: 10px 0;
+            }
             @include breakpoint($tablet) {
               font-size: 15px;
             }

@@ -1,5 +1,4 @@
-@import "utilities/mixin";
-@import "utilities/variable";
+
 
 #block-internship2017-venue-2,#block-venue-3 {
   background-color: aliceblue;
@@ -25,35 +24,46 @@
           p.first-para {
             color: black;
           }
-        .secon-para {
+        .second-para {
           padding: 1px;
+          padding: 13px 0;
         }
         button {
           border: 1px solid white;
           box-shadow: -5px 5px 6px #888888;
           background-color: white;
+          margin-top: 4%;
         }
         @include breakpoint($tablet) {
           padding-left: 4%;
         }
         @include breakpoint($mobile) {
           padding-left: 10%;
+          margin: 10% 0;
         }
       }
       .map {
         padding-left: 10%;
-        @include breakpoint($tablet) {
-          padding: 0px;
+        @include breakpoint($laptop) {
+          padding-left: 3%;
           width: 100%;
         }
         @include breakpoint($mobile) {
-          img {
+          padding: 0;
+        }
+        img {
             width: 100%;
-          }
         }
       }
   }
 }
-#block-venue-3 h2{
+#block-venue-3 {
+  margin-top: -24px;
+  h2 {
   margin-top:0px;
+  @include breakpoint($tablet) {
+    padding-top: 10%;
+  }
+  }
 }
+

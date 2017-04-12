@@ -1,3 +1,216 @@
+/*------------------------------------*\
+    * @file
+    * Reset CSS.
+\*------------------------------------*/
+/* line 6, ../sass/utilities/_reset.scss */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 98, ../sass/utilities/_reset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* line 112, ../sass/utilities/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 116, ../sass/utilities/_reset.scss */
+ol,
+ul {
+  list-style: none;
+}
+
+/* line 121, ../sass/utilities/_reset.scss */
+blockquote,
+q {
+  quotes: none;
+}
+
+/* line 126, ../sass/utilities/_reset.scss */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* line 134, ../sass/utilities/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 139, ../sass/utilities/_reset.scss */
+* {
+  box-sizing: border-box;
+}
+
+/*------------------------------------*\
+    * @file
+    * Variables.
+\*------------------------------------*/
+/*------------------------------------*\
+    * @file
+    * Footer.
+\*------------------------------------*/
+/* line 6, ../sass/components/_footer.scss */
+#block-internship2017-madewithlovebyqed42 {
+  background-color: aliceblue;
+}
+/* line 8, ../sass/components/_footer.scss */
+#block-internship2017-madewithlovebyqed42 p {
+  text-align: right;
+  padding-right: 10%;
+  color: #c3bcbc;
+  margin: 0px;
+  padding-bottom: 1%;
+}
+
+/* line 17, ../sass/components/_footer.scss */
+#block-internship2017-followus {
+  background-color: black;
+}
+/* line 19, ../sass/components/_footer.scss */
+#block-internship2017-followus .follow-us {
+  background-color: black;
+  color: white;
+  display: flex;
+  margin: 0px;
+  padding: 11px 12%;
+  float: right;
+}
+/* line 27, ../sass/components/_footer.scss */
+#block-internship2017-followus .image1 {
+  width: 21px;
+  padding: 0 13px;
+}
+/* line 31, ../sass/components/_footer.scss */
+#block-internship2017-followus img {
+  width: 100%;
+}
+
+/*------------------------------------*\
+    * @file
+    * Header.
+\*------------------------------------*/
+/* line 10, ../sass/components/_header.scss */
+input.toggle, label.toggle {
+  display: none;
+}
+
+/* line 12, ../sass/components/_header.scss */
+label.toggle {
+  font-weight: 900;
+  font-size: 1.2em;
+  padding: 10px 20px;
+}
+
+/* line 18, ../sass/components/_header.scss */
+.logopath1 {
+  display: none;
+}
+
+/* line 22, ../sass/components/_header.scss */
 ul.menu {
   display: flex;
   justify-content: center;
@@ -7,51 +220,84 @@ ul.menu {
   margin: 0px;
 }
 @media screen and (max-width: 768px) {
+  /* line 22, ../sass/components/_header.scss */
   ul.menu {
     width: 95%;
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 425px) {
+  /* line 22, ../sass/components/_header.scss */
   ul.menu {
     display: block;
   }
 }
+/* line 35, ../sass/components/_header.scss */
 ul.menu a.is-active {
   color: #e6103e;
-  border-bottom: 2px solid #e6103e;
+  border-bottom: 3px solid #e6103e;
 }
 
+/* line 41, ../sass/components/_header.scss */
 .menu-item a {
   text-decoration: none;
   color: dimgrey;
   display: block;
-  font-size: 16px;
+  font-size: 18px;
   padding: 34px 58px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+  /* line 41, ../sass/components/_header.scss */
   .menu-item a {
     padding: 34px 25px;
   }
 }
 
-img.image-style-banner {
-  width: 100%;
+/* line 53, ../sass/components/_header.scss */
+#logopath img {
+  position: relative;
+  z-index: 2;
 }
 @media screen and (max-width: 768px) {
-  img.image-style-banner {
-    height: 75vh;
+  /* line 53, ../sass/components/_header.scss */
+  #logopath img {
+    display: none;
   }
 }
 
+/* line 61, ../sass/components/_header.scss */
+img.logopath1 {
+  position: relative;
+  z-index: 2;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: -22px;
+}
+
+/* line 68, ../sass/components/_header.scss */
+img.image-style-banner {
+  width: 100%;
+  height: auto;
+  margin-top: -25px;
+}
+@media screen and (max-width: 425px) {
+  /* line 68, ../sass/components/_header.scss */
+  img.image-style-banner {
+    margin-top: -9px;
+  }
+}
+
+/* line 77, ../sass/components/_header.scss */
 #block-internship2017-sessionbanner {
   position: relative;
 }
+/* line 79, ../sass/components/_header.scss */
 #block-internship2017-sessionbanner .session-banner {
   position: absolute;
   bottom: 20%;
   left: 12%;
 }
+/* line 83, ../sass/components/_header.scss */
 #block-internship2017-sessionbanner .session-banner h1 {
   color: white;
   font-size: 28px;
@@ -59,11 +305,13 @@ img.image-style-banner {
   margin: 12px 0px;
 }
 @media screen and (max-width: 425px) {
+  /* line 83, ../sass/components/_header.scss */
   #block-internship2017-sessionbanner .session-banner h1 {
     font-size: 20px;
     word-spacing: 4px;
   }
 }
+/* line 93, ../sass/components/_header.scss */
 #block-internship2017-sessionbanner .session-banner a {
   border: 2px solid #e6103e;
   text-decoration: none;
@@ -74,11 +322,36 @@ img.image-style-banner {
   font-size: 14px;
 }
 
+@media (max-width: 960px) {
+  /* line 103, ../sass/components/_header.scss */
+  ul.menu {
+    display: none;
+  }
+
+  /* line 105, ../sass/components/_header.scss */
+  input.toggle, .toggle span {
+    display: none;
+  }
+
+  /* line 107, ../sass/components/_header.scss */
+  input[type=checkbox]:checked ~ ul.menu, label.toggle {
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+  }
+
+  /* line 112, ../sass/components/_header.scss */
+  .logopath1 {
+    display: inline;
+  }
+}
 @media screen and (max-width: 768px) {
+  /* line 3, ../sass/block/_oursponsors.scss */
   #block-internship2017-views-block-our-sponsors-block-1, .view-our-sponsors {
     padding-bottom: 0px;
   }
 }
+/* line 7, ../sass/block/_oursponsors.scss */
 #block-internship2017-views-block-our-sponsors-block-1 h2, .view-our-sponsors h2 {
   font-size: 32px;
   color: #0a6cc1;
@@ -87,35 +360,53 @@ img.image-style-banner {
   margin-top: 10%;
 }
 @media screen and (max-width: 768px) {
+  /* line 7, ../sass/block/_oursponsors.scss */
   #block-internship2017-views-block-our-sponsors-block-1 h2, .view-our-sponsors h2 {
     font-size: 45px;
   }
 }
+@media screen and (max-width: 425px) {
+  /* line 7, ../sass/block/_oursponsors.scss */
+  #block-internship2017-views-block-our-sponsors-block-1 h2, .view-our-sponsors h2 {
+    margin-bottom: 10%;
+  }
+}
+/* line 16, ../sass/block/_oursponsors.scss */
 #block-internship2017-views-block-our-sponsors-block-1 .view-content, .view-our-sponsors .view-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
 }
 @media screen and (max-width: 768px) {
+  /* line 16, ../sass/block/_oursponsors.scss */
   #block-internship2017-views-block-our-sponsors-block-1 .view-content, .view-our-sponsors .view-content {
     width: 100%;
   }
 }
 @media screen and (max-width: 425px) {
+  /* line 16, ../sass/block/_oursponsors.scss */
   #block-internship2017-views-block-our-sponsors-block-1 .view-content, .view-our-sponsors .view-content {
     display: block;
+    margin-top: 5%;
   }
 }
+/* line 28, ../sass/block/_oursponsors.scss */
 #block-internship2017-views-block-our-sponsors-block-1 .view-content .views-row, .view-our-sponsors .view-content .views-row {
   width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 425px) {
+  /* line 28, ../sass/block/_oursponsors.scss */
   #block-internship2017-views-block-our-sponsors-block-1 .view-content .views-row, .view-our-sponsors .view-content .views-row {
     width: 100%;
+    margin-bottom: 7%;
   }
 }
+/* line 37, ../sass/block/_oursponsors.scss */
 #block-internship2017-views-block-our-sponsors-block-1 .view-content .views-row .field-content, .view-our-sponsors .view-content .views-row .field-content {
   display: flex;
   justify-content: center;
@@ -123,32 +414,52 @@ img.image-style-banner {
   padding: 14%;
 }
 @media screen and (max-width: 768px) {
+  /* line 37, ../sass/block/_oursponsors.scss */
   #block-internship2017-views-block-our-sponsors-block-1 .view-content .views-row .field-content, .view-our-sponsors .view-content .views-row .field-content {
     padding: 0px;
   }
 }
 
+/* line 3, ../sass/block/_helpus.scss */
 #block-internship2017-helpusmakethisanawesomeexperience {
   margin-top: 7%;
 }
+/* line 5, ../sass/block/_helpus.scss */
 #block-internship2017-helpusmakethisanawesomeexperience .help-us {
   width: 40%;
   margin: 0 auto;
 }
 @media screen and (max-width: 768px) {
+  /* line 5, ../sass/block/_helpus.scss */
   #block-internship2017-helpusmakethisanawesomeexperience .help-us {
     width: 100%;
     padding-top: 10%;
   }
 }
+@media screen and (max-width: 425px) {
+  /* line 5, ../sass/block/_helpus.scss */
+  #block-internship2017-helpusmakethisanawesomeexperience .help-us {
+    padding: 15% 0;
+  }
+}
+/* line 14, ../sass/block/_helpus.scss */
 #block-internship2017-helpusmakethisanawesomeexperience .help-us .para p {
   color: gray;
   text-align: center;
   margin-bottom: 10%;
+  font-size: 25px;
 }
+@media screen and (max-width: 1024px) {
+  /* line 14, ../sass/block/_helpus.scss */
+  #block-internship2017-helpusmakethisanawesomeexperience .help-us .para p {
+    font-size: 23px;
+  }
+}
+/* line 24, ../sass/block/_helpus.scss */
 #block-internship2017-helpusmakethisanawesomeexperience .help-us .link-help-us p {
   text-align: center;
 }
+/* line 27, ../sass/block/_helpus.scss */
 #block-internship2017-helpusmakethisanawesomeexperience .help-us .link-help-us a {
   border: 2px solid #e6103e;
   text-decoration: none;
@@ -158,9 +469,11 @@ img.image-style-banner {
   padding: 13px 23px;
 }
 
+/* line 3, ../sass/block/_venue.scss */
 #block-internship2017-venue-2, #block-venue-3 {
   background-color: aliceblue;
 }
+/* line 5, ../sass/block/_venue.scss */
 #block-internship2017-venue-2 h2, #block-venue-3 h2 {
   font-size: 32px;
   color: #0a6cc1;
@@ -170,10 +483,12 @@ img.image-style-banner {
   padding-top: 3%;
 }
 @media screen and (max-width: 768px) {
+  /* line 5, ../sass/block/_venue.scss */
   #block-internship2017-venue-2 h2, #block-venue-3 h2 {
     font-size: 41px;
   }
 }
+/* line 12, ../sass/block/_venue.scss */
 #block-internship2017-venue-2 .venue, #block-venue-3 .venue {
   width: 70%;
   margin: 0 auto;
@@ -181,98 +496,105 @@ img.image-style-banner {
   padding: 3% 0;
 }
 @media screen and (max-width: 768px) {
+  /* line 12, ../sass/block/_venue.scss */
   #block-internship2017-venue-2 .venue, #block-venue-3 .venue {
     width: 100%;
   }
 }
 @media screen and (max-width: 425px) {
+  /* line 12, ../sass/block/_venue.scss */
   #block-internship2017-venue-2 .venue, #block-venue-3 .venue {
     display: block;
   }
 }
+/* line 22, ../sass/block/_venue.scss */
 #block-internship2017-venue-2 .venue .text, #block-venue-3 .venue .text {
   color: gray;
 }
+/* line 24, ../sass/block/_venue.scss */
 #block-internship2017-venue-2 .venue .text p.first-para, #block-venue-3 .venue .text p.first-para {
   color: black;
 }
-#block-internship2017-venue-2 .venue .text .secon-para, #block-venue-3 .venue .text .secon-para {
+/* line 27, ../sass/block/_venue.scss */
+#block-internship2017-venue-2 .venue .text .second-para, #block-venue-3 .venue .text .second-para {
   padding: 1px;
+  padding: 13px 0;
 }
+/* line 31, ../sass/block/_venue.scss */
 #block-internship2017-venue-2 .venue .text button, #block-venue-3 .venue .text button {
   border: 1px solid white;
   box-shadow: -5px 5px 6px #888888;
   background-color: white;
+  margin-top: 4%;
 }
 @media screen and (max-width: 768px) {
+  /* line 22, ../sass/block/_venue.scss */
   #block-internship2017-venue-2 .venue .text, #block-venue-3 .venue .text {
     padding-left: 4%;
   }
 }
 @media screen and (max-width: 425px) {
+  /* line 22, ../sass/block/_venue.scss */
   #block-internship2017-venue-2 .venue .text, #block-venue-3 .venue .text {
     padding-left: 10%;
+    margin: 10% 0;
   }
 }
+/* line 45, ../sass/block/_venue.scss */
 #block-internship2017-venue-2 .venue .map, #block-venue-3 .venue .map {
   padding-left: 10%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+  /* line 45, ../sass/block/_venue.scss */
   #block-internship2017-venue-2 .venue .map, #block-venue-3 .venue .map {
-    padding: 0px;
+    padding-left: 3%;
     width: 100%;
   }
 }
 @media screen and (max-width: 425px) {
-  #block-internship2017-venue-2 .venue .map img, #block-venue-3 .venue .map img {
-    width: 100%;
+  /* line 45, ../sass/block/_venue.scss */
+  #block-internship2017-venue-2 .venue .map, #block-venue-3 .venue .map {
+    padding: 0;
   }
 }
-
-#block-venue-3 h2 {
-  margin-top: 0px;
-}
-
-#block-internship2017-madewithlovebyqed42 {
-  background-color: aliceblue;
-}
-#block-internship2017-madewithlovebyqed42 p {
-  text-align: right;
-  padding-right: 10%;
-  color: #c3bcbc;
-  margin: 0px;
-  padding-bottom: 1%;
-}
-
-#block-internship2017-followus {
-  background-color: black;
-}
-#block-internship2017-followus .follow-us {
-  background-color: black;
-  color: white;
-  display: flex;
-  margin: 0px;
-  padding: 11px 12%;
-  float: right;
-}
-#block-internship2017-followus .image1 {
-  width: 21px;
-  padding: 0 13px;
-}
-#block-internship2017-followus img {
+/* line 54, ../sass/block/_venue.scss */
+#block-internship2017-venue-2 .venue .map img, #block-venue-3 .venue .map img {
   width: 100%;
 }
 
+/* line 60, ../sass/block/_venue.scss */
+#block-venue-3 {
+  margin-top: -24px;
+}
+/* line 62, ../sass/block/_venue.scss */
+#block-venue-3 h2 {
+  margin-top: 0px;
+}
+@media screen and (max-width: 768px) {
+  /* line 62, ../sass/block/_venue.scss */
+  #block-venue-3 h2 {
+    padding-top: 10%;
+  }
+}
+
+/*------------------------------------*\
+    * @file
+    * Home Page.
+\*------------------------------------*/
+/* line 6, ../sass/pages/_homepage.scss */
 .tickets {
   display: flex;
   width: 70%;
   margin: 0 auto;
+  margin: 5% auto;
 }
 @media screen and (max-width: 768px) {
+  /* line 6, ../sass/pages/_homepage.scss */
   .tickets {
     display: block;
   }
 }
+/* line 13, ../sass/pages/_homepage.scss */
 .tickets .ticket1, .tickets .ticket2 {
   width: 50%;
   padding: 37px;
@@ -280,21 +602,31 @@ img.image-style-banner {
   margin-left: 56px;
 }
 @media screen and (max-width: 768px) {
+  /* line 13, ../sass/pages/_homepage.scss */
   .tickets .ticket1, .tickets .ticket2 {
     width: 100%;
     margin: 0;
   }
 }
 @media screen and (max-width: 425px) {
+  /* line 13, ../sass/pages/_homepage.scss */
   .tickets .ticket1, .tickets .ticket2 {
     padding: 37px 0;
   }
 }
+/* line 23, ../sass/pages/_homepage.scss */
 .tickets .ticket1 p, .tickets .ticket2 p {
   margin-bottom: 30px;
   color: gray;
   font-size: 18px;
 }
+@media screen and (max-width: 1024px) {
+  /* line 23, ../sass/pages/_homepage.scss */
+  .tickets .ticket1 p, .tickets .ticket2 p {
+    font-size: 16px;
+  }
+}
+/* line 30, ../sass/pages/_homepage.scss */
 .tickets .ticket1 a, .tickets .ticket2 a {
   border: 2px solid #e6103e;
   text-decoration: none;
@@ -303,28 +635,35 @@ img.image-style-banner {
   color: white;
 }
 
+/* line 35, ../sass/pages/_homepage.scss */
 .ticket1 {
   float: left;
 }
 @media screen and (max-width: 768px) {
+  /* line 35, ../sass/pages/_homepage.scss */
   .ticket1 {
     float: right;
   }
 }
+/* line 40, ../sass/pages/_homepage.scss */
 .ticket1 a {
   padding: 13px 23px;
 }
 
+/* line 44, ../sass/pages/_homepage.scss */
 .ticket2 {
   float: right;
 }
+/* line 46, ../sass/pages/_homepage.scss */
 .ticket2 a {
   padding: 13px 64px;
 }
 
+/* line 50, ../sass/pages/_homepage.scss */
 .main-wrapper {
   background-color: #f7f9fb;
 }
+/* line 52, ../sass/pages/_homepage.scss */
 .main-wrapper .class-wrapper {
   display: flex;
   width: 70%;
@@ -332,61 +671,100 @@ img.image-style-banner {
   background-color: #f7f9fb;
 }
 @media screen and (max-width: 768px) {
+  /* line 52, ../sass/pages/_homepage.scss */
   .main-wrapper .class-wrapper {
     width: 90%;
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 425px) {
+  /* line 52, ../sass/pages/_homepage.scss */
   .main-wrapper .class-wrapper {
     display: block;
   }
 }
 @media screen and (max-width: 768px) {
+  /* line 62, ../sass/pages/_homepage.scss */
   .main-wrapper .class-wrapper .keynote-speaker {
     width: 60%;
   }
 }
 @media screen and (max-width: 425px) {
+  /* line 62, ../sass/pages/_homepage.scss */
   .main-wrapper .class-wrapper .keynote-speaker {
     width: 100%;
   }
 }
+/* line 69, ../sass/pages/_homepage.scss */
 .main-wrapper .class-wrapper .keynote-speaker h1 {
-  margin-top: 43%;
-  font-size: 18px;
+  margin: 18% 0;
+  font-size: 32px;
   color: #0a6cc1;
 }
+@media screen and (max-width: 1024px) {
+  /* line 69, ../sass/pages/_homepage.scss */
+  .main-wrapper .class-wrapper .keynote-speaker h1 {
+    font-size: 20px;
+  }
+}
 @media screen and (max-width: 425px) {
+  /* line 69, ../sass/pages/_homepage.scss */
   .main-wrapper .class-wrapper .keynote-speaker h1 {
     font-size: 26px;
     margin-top: 10%;
     padding-top: 10%;
   }
 }
+/* line 82, ../sass/pages/_homepage.scss */
 .main-wrapper .class-wrapper .keynote-speaker p {
   color: gray;
-  font-size: 14px;
+  font-size: 18px;
+  margin: 20px 0px;
+  line-height: 25px;
+}
+@media screen and (max-width: 1024px) {
+  /* line 82, ../sass/pages/_homepage.scss */
+  .main-wrapper .class-wrapper .keynote-speaker p {
+    line-height: 20px;
+  }
 }
 @media screen and (max-width: 768px) {
+  /* line 82, ../sass/pages/_homepage.scss */
   .main-wrapper .class-wrapper .keynote-speaker p {
-    font-size: 17px;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 425px) {
+  /* line 82, ../sass/pages/_homepage.scss */
   .main-wrapper .class-wrapper .keynote-speaker p {
-    font-size: 22px;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 768px) {
+  /* line 98, ../sass/pages/_homepage.scss */
   .main-wrapper .class-wrapper .keynote-speaker-image {
     width: 70%;
   }
+  /* line 101, ../sass/pages/_homepage.scss */
   .main-wrapper .class-wrapper .keynote-speaker-image img {
     width: 100%;
   }
 }
+@media screen and (max-width: 425px) {
+  /* line 98, ../sass/pages/_homepage.scss */
+  .main-wrapper .class-wrapper .keynote-speaker-image {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 
+@media screen and (max-width: 425px) {
+  /* line 112, ../sass/pages/_homepage.scss */
+  .events-wrapper {
+    margin-top: 15%;
+  }
+}
+/* line 116, ../sass/pages/_homepage.scss */
 .events-wrapper h1 {
   width: 50%;
   margin: 0 auto;
@@ -394,36 +772,43 @@ img.image-style-banner {
   margin-top: 5%;
   margin-bottom: 8%;
   color: #0a6cc1;
+  font-size: 32px;
 }
+/* line 124, ../sass/pages/_homepage.scss */
 .events-wrapper .events {
   display: flex;
   width: 80%;
   margin: 0 auto;
   justify-content: space-around;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 425px) {
+  /* line 124, ../sass/pages/_homepage.scss */
   .events-wrapper .events {
     display: block;
   }
 }
+/* line 131, ../sass/pages/_homepage.scss */
 .events-wrapper .events .event1, .events-wrapper .events .event2, .events-wrapper .events .event3 {
   width: 30%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 425px) {
+  /* line 131, ../sass/pages/_homepage.scss */
   .events-wrapper .events .event1, .events-wrapper .events .event2, .events-wrapper .events .event3 {
     width: 100%;
+    margin-top: 7%;
   }
 }
-.events-wrapper .events .event1 img, .events-wrapper .events .event2 img, .events-wrapper .events .event3 img {
+/* line 137, ../sass/pages/_homepage.scss */
+.events-wrapper .events .event1 .event_img, .events-wrapper .events .event2 .event_img, .events-wrapper .events .event3 .event_img {
+  height: 178px;
+}
+/* line 139, ../sass/pages/_homepage.scss */
+.events-wrapper .events .event1 .event_img img, .events-wrapper .events .event2 .event_img img, .events-wrapper .events .event3 .event_img img {
   width: 100%;
-  height: 185px;
+  height: 100%;
   border-radius: 5px 5px 0 0;
 }
-@media screen and (max-width: 768px) {
-  .events-wrapper .events .event1 img, .events-wrapper .events .event2 img, .events-wrapper .events .event3 img {
-    height: 245px;
-  }
-}
+/* line 145, ../sass/pages/_homepage.scss */
 .events-wrapper .events .event1 h1, .events-wrapper .events .event2 h1, .events-wrapper .events .event3 h1 {
   text-align: left;
   margin: 0px;
@@ -433,17 +818,36 @@ img.image-style-banner {
   padding-top: 20%;
 }
 @media screen and (max-width: 768px) {
+  /* line 145, ../sass/pages/_homepage.scss */
   .events-wrapper .events .event1 h1, .events-wrapper .events .event2 h1, .events-wrapper .events .event3 h1 {
-    padding-top: 5%;
+    padding: 5% 0;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 425px) {
+  /* line 145, ../sass/pages/_homepage.scss */
+  .events-wrapper .events .event1 h1, .events-wrapper .events .event2 h1, .events-wrapper .events .event3 h1 {
     padding-bottom: 0px;
   }
 }
 @media screen and (max-width: 768px) {
+  /* line 160, ../sass/pages/_homepage.scss */
   .events-wrapper .events .event1 p, .events-wrapper .events .event2 p, .events-wrapper .events .event3 p {
     padding-bottom: 8%;
   }
 }
+@media screen and (max-width: 425px) {
+  /* line 160, ../sass/pages/_homepage.scss */
+  .events-wrapper .events .event1 p, .events-wrapper .events .event2 p, .events-wrapper .events .event3 p {
+    padding: 4% 0;
+  }
+}
 
+/*------------------------------------*\
+    * @file
+    * Sponsors Page.
+\*------------------------------------*/
+/* line 6, ../sass/pages/_sponsorspage.scss */
 #block-internship2017-benefitsofbeingasponsor h2 {
   font-size: 32px;
   color: #0a6cc1;
@@ -453,43 +857,73 @@ img.image-style-banner {
   font-size: 28px;
 }
 @media screen and (max-width: 768px) {
+  /* line 6, ../sass/pages/_sponsorspage.scss */
   #block-internship2017-benefitsofbeingasponsor h2 {
     width: 100%;
   }
 }
 @media screen and (max-width: 425px) {
+  /* line 6, ../sass/pages/_sponsorspage.scss */
   #block-internship2017-benefitsofbeingasponsor h2 {
     font-size: 22px;
   }
 }
+/* line 16, ../sass/pages/_sponsorspage.scss */
 #block-internship2017-benefitsofbeingasponsor .benefits {
   display: flex;
   width: 80%;
   margin: 0 auto;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+  /* line 16, ../sass/pages/_sponsorspage.scss */
   #block-internship2017-benefitsofbeingasponsor .benefits {
     width: 100%;
-  }
-}
-@media screen and (max-width: 425px) {
-  #block-internship2017-benefitsofbeingasponsor .benefits {
     display: block;
   }
 }
+/* line 23, ../sass/pages/_sponsorspage.scss */
 #block-internship2017-benefitsofbeingasponsor .benefits .benefit1, #block-internship2017-benefitsofbeingasponsor .benefits .benefit2, #block-internship2017-benefitsofbeingasponsor .benefits .benefit3 {
   padding: 4%;
 }
+@media screen and (max-width: 1024px) {
+  /* line 23, ../sass/pages/_sponsorspage.scss */
+  #block-internship2017-benefitsofbeingasponsor .benefits .benefit1, #block-internship2017-benefitsofbeingasponsor .benefits .benefit2, #block-internship2017-benefitsofbeingasponsor .benefits .benefit3 {
+    padding: 3%;
+  }
+}
+@media screen and (max-width: 425px) {
+  /* line 23, ../sass/pages/_sponsorspage.scss */
+  #block-internship2017-benefitsofbeingasponsor .benefits .benefit1, #block-internship2017-benefitsofbeingasponsor .benefits .benefit2, #block-internship2017-benefitsofbeingasponsor .benefits .benefit3 {
+    padding: 7% 3%;
+  }
+}
+/* line 31, ../sass/pages/_sponsorspage.scss */
 #block-internship2017-benefitsofbeingasponsor .benefits .benefit1 p.benefit-heading, #block-internship2017-benefitsofbeingasponsor .benefits .benefit2 p.benefit-heading, #block-internship2017-benefitsofbeingasponsor .benefits .benefit3 p.benefit-heading {
-  border-bottom: 1px solid black;
+  border-top: none;
   margin: 0px;
   padding-bottom: 9%;
+  margin-bottom: 10px;
   text-transform: uppercase;
   font-size: 16px;
   text-align: left;
   color: black;
 }
+@media screen and (max-width: 1024px) {
+  /* line 31, ../sass/pages/_sponsorspage.scss */
+  #block-internship2017-benefitsofbeingasponsor .benefits .benefit1 p.benefit-heading, #block-internship2017-benefitsofbeingasponsor .benefits .benefit2 p.benefit-heading, #block-internship2017-benefitsofbeingasponsor .benefits .benefit3 p.benefit-heading {
+    font-size: 20px;
+    padding-bottom: 3%;
+  }
+}
+@media screen and (max-width: 425px) {
+  /* line 31, ../sass/pages/_sponsorspage.scss */
+  #block-internship2017-benefitsofbeingasponsor .benefits .benefit1 p.benefit-heading, #block-internship2017-benefitsofbeingasponsor .benefits .benefit2 p.benefit-heading, #block-internship2017-benefitsofbeingasponsor .benefits .benefit3 p.benefit-heading {
+    font-size: 16px;
+  }
+}
+/* line 48, ../sass/pages/_sponsorspage.scss */
 #block-internship2017-benefitsofbeingasponsor .benefits .benefit1 p, #block-internship2017-benefitsofbeingasponsor .benefits .benefit2 p, #block-internship2017-benefitsofbeingasponsor .benefits .benefit3 p {
+  border-top: 1px solid black;
   color: gray;
   font-size: 16px;
   text-transform: none;
@@ -497,6 +931,11 @@ img.image-style-banner {
   text-align: left;
 }
 
+/*------------------------------------*\
+    * @file
+    * Venue Page.
+\*------------------------------------*/
+/* line 7, ../sass/pages/_venuepage.scss */
 #block-contactus h2 {
   font-size: 32px;
   color: #0a6cc1;
@@ -504,16 +943,19 @@ img.image-style-banner {
   text-transform: uppercase;
   margin-top: 10%;
 }
+/* line 10, ../sass/pages/_venuepage.scss */
 #block-contactus h3 {
   text-align: center;
   color: #aaaaaa;
 }
 @media screen and (max-width: 425px) {
+  /* line 10, ../sass/pages/_venuepage.scss */
   #block-contactus h3 {
     font-size: 16px;
   }
 }
 
+/* line 20, ../sass/pages/_venuepage.scss */
 #block-majorattractionsinandaroundpune h2 {
   font-size: 32px;
   color: #0a6cc1;
@@ -523,32 +965,54 @@ img.image-style-banner {
   font-size: 26px;
 }
 @media screen and (max-width: 425px) {
+  /* line 20, ../sass/pages/_venuepage.scss */
   #block-majorattractionsinandaroundpune h2 {
-    font-size: 18px;
+    font-size: 14px;
     margin-bottom: 8%;
   }
 }
+/* line 28, ../sass/pages/_venuepage.scss */
 #block-majorattractionsinandaroundpune .attraction-wrapper {
   display: flex;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   justify-content: space-around;
-  margin-bottom: 5%;
+  margin: 5% auto;
   color: #0a6cc1;
+  flex-wrap: wrap;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+  /* line 28, ../sass/pages/_venuepage.scss */
   #block-majorattractionsinandaroundpune .attraction-wrapper {
     width: 95%;
   }
 }
+/* line 38, ../sass/pages/_venuepage.scss */
 #block-majorattractionsinandaroundpune .attraction-wrapper .attraction1, #block-majorattractionsinandaroundpune .attraction-wrapper .attraction2, #block-majorattractionsinandaroundpune .attraction-wrapper .attraction3, #block-majorattractionsinandaroundpune .attraction-wrapper .attraction4 {
   width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+@media screen and (max-width: 768px) {
+  /* line 38, ../sass/pages/_venuepage.scss */
+  #block-majorattractionsinandaroundpune .attraction-wrapper .attraction1, #block-majorattractionsinandaroundpune .attraction-wrapper .attraction2, #block-majorattractionsinandaroundpune .attraction-wrapper .attraction3, #block-majorattractionsinandaroundpune .attraction-wrapper .attraction4 {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 425px) {
+  /* line 38, ../sass/pages/_venuepage.scss */
+  #block-majorattractionsinandaroundpune .attraction-wrapper .attraction1, #block-majorattractionsinandaroundpune .attraction-wrapper .attraction2, #block-majorattractionsinandaroundpune .attraction-wrapper .attraction3, #block-majorattractionsinandaroundpune .attraction-wrapper .attraction4 {
+    width: 100%;
+  }
+}
+/* line 49, ../sass/pages/_venuepage.scss */
 #block-majorattractionsinandaroundpune .attraction-wrapper .attraction1 img, #block-majorattractionsinandaroundpune .attraction-wrapper .attraction2 img, #block-majorattractionsinandaroundpune .attraction-wrapper .attraction3 img, #block-majorattractionsinandaroundpune .attraction-wrapper .attraction4 img {
   width: 90%;
   height: 75%;
   border-radius: 5px 5px 0 0;
 }
+/* line 54, ../sass/pages/_venuepage.scss */
 #block-majorattractionsinandaroundpune .attraction-wrapper .attraction1 p, #block-majorattractionsinandaroundpune .attraction-wrapper .attraction2 p, #block-majorattractionsinandaroundpune .attraction-wrapper .attraction3 p, #block-majorattractionsinandaroundpune .attraction-wrapper .attraction4 p {
   font-size: 16px;
   color: #0a6cc1;
@@ -556,94 +1020,120 @@ img.image-style-banner {
   text-transform: uppercase;
 }
 @media screen and (max-width: 768px) {
+  /* line 54, ../sass/pages/_venuepage.scss */
   #block-majorattractionsinandaroundpune .attraction-wrapper .attraction1 p, #block-majorattractionsinandaroundpune .attraction-wrapper .attraction2 p, #block-majorattractionsinandaroundpune .attraction-wrapper .attraction3 p, #block-majorattractionsinandaroundpune .attraction-wrapper .attraction4 p {
-    font-size: 14px;
+    font-size: 21px;
+    padding-top: 15px;
   }
 }
 @media screen and (max-width: 425px) {
+  /* line 54, ../sass/pages/_venuepage.scss */
   #block-majorattractionsinandaroundpune .attraction-wrapper .attraction1 p, #block-majorattractionsinandaroundpune .attraction-wrapper .attraction2 p, #block-majorattractionsinandaroundpune .attraction-wrapper .attraction3 p, #block-majorattractionsinandaroundpune .attraction-wrapper .attraction4 p {
-    font-size: 12px;
+    font-size: 18px;
     text-align: center;
   }
 }
 
-.selection-criteria {
+/*------------------------------------*\
+    * @file
+    * Sessions Page.
+\*------------------------------------*/
+/* line 5, ../sass/pages/_sessionpage.scss */
+.selection-criteria-wrapper {
+  background-color: aliceblue;
+}
+/* line 7, ../sass/pages/_sessionpage.scss */
+.selection-criteria-wrapper .selection-criteria {
   width: 90%;
   margin: 0 auto;
 }
-.selection-criteria h1 {
+/* line 9, ../sass/pages/_sessionpage.scss */
+.selection-criteria-wrapper .selection-criteria h1 {
   font-size: 32px;
   color: #0a6cc1;
   text-align: center;
   text-transform: uppercase;
   margin-top: 10%;
   font-size: 28px;
-  margin-top: 7%;
+  padding-top: 5%;
+  margin-top: 0;
 }
 @media screen and (max-width: 425px) {
-  .selection-criteria h1 {
+  /* line 9, ../sass/pages/_sessionpage.scss */
+  .selection-criteria-wrapper .selection-criteria h1 {
     font-size: 20px;
-    margin-top: 22%;
+    padding: 15% 0;
   }
 }
-.selection-criteria p {
+/* line 19, ../sass/pages/_sessionpage.scss */
+.selection-criteria-wrapper .selection-criteria p {
   font-size: 16px;
   text-align: center;
-  width: 60%;
+  width: 75%;
   margin: 0 auto;
   color: gray;
   padding: 4% 0;
+  line-height: 18px;
 }
 @media screen and (max-width: 768px) {
-  .selection-criteria p {
+  /* line 19, ../sass/pages/_sessionpage.scss */
+  .selection-criteria-wrapper .selection-criteria p {
     width: 90%;
   }
 }
 @media screen and (max-width: 425px) {
-  .selection-criteria p {
+  /* line 19, ../sass/pages/_sessionpage.scss */
+  .selection-criteria-wrapper .selection-criteria p {
     width: 100%;
     text-align: justify;
     font-size: 13px;
   }
 }
-.selection-criteria .links {
+/* line 35, ../sass/pages/_sessionpage.scss */
+.selection-criteria-wrapper .selection-criteria .links {
   padding: 29px 20px;
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 @media screen and (max-width: 768px) {
-  .selection-criteria .links {
+  /* line 35, ../sass/pages/_sessionpage.scss */
+  .selection-criteria-wrapper .selection-criteria .links {
     width: 90%;
     padding: 0px;
   }
 }
-.selection-criteria .links a {
+/* line 45, ../sass/pages/_sessionpage.scss */
+.selection-criteria-wrapper .selection-criteria .links a {
   border: 2px solid #e6103e;
   text-decoration: none;
   border-radius: 5px;
   background-color: #e6103e;
   color: white;
-  width: 12%;
+  width: 20%;
   padding: 12px 30px;
   text-align: center;
   margin: 40px 30px;
   font-size: 16px;
 }
 @media screen and (max-width: 768px) {
-  .selection-criteria .links a {
+  /* line 45, ../sass/pages/_sessionpage.scss */
+  .selection-criteria-wrapper .selection-criteria .links a {
     padding: 12px 40px;
     margin: 40px 20px;
   }
 }
 @media screen and (max-width: 425px) {
-  .selection-criteria .links a {
-    width: 30%;
+  /* line 45, ../sass/pages/_sessionpage.scss */
+  .selection-criteria-wrapper .selection-criteria .links a {
+    width: 45%;
+    margin: 40px 0px;
+    padding: 13px;
   }
 }
 
+/* line 67, ../sass/pages/_sessionpage.scss */
 .selection-committee h1 {
   font-size: 32px;
   color: #0a6cc1;
@@ -652,10 +1142,12 @@ img.image-style-banner {
   margin-top: 5%;
 }
 @media screen and (max-width: 425px) {
+  /* line 67, ../sass/pages/_sessionpage.scss */
   .selection-committee h1 {
     font-size: 23px;
   }
 }
+/* line 77, ../sass/pages/_sessionpage.scss */
 .selection-committee p {
   font-size: 16px;
   text-align: center;
@@ -665,6 +1157,7 @@ img.image-style-banner {
   padding: 4% 0;
 }
 @media screen and (max-width: 425px) {
+  /* line 77, ../sass/pages/_sessionpage.scss */
   .selection-committee p {
     width: 90%;
     font-size: 16px;
@@ -672,6 +1165,7 @@ img.image-style-banner {
   }
 }
 
+/* line 90, ../sass/pages/_sessionpage.scss */
 .committee {
   padding: 29px 20px;
   width: 90%;
@@ -680,31 +1174,40 @@ img.image-style-banner {
   justify-content: space-around;
   flex-wrap: wrap;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+  /* line 90, ../sass/pages/_sessionpage.scss */
   .committee {
     width: 100%;
-    padding: 0px;
   }
 }
 @media screen and (max-width: 425px) {
+  /* line 90, ../sass/pages/_sessionpage.scss */
   .committee {
     display: block;
   }
 }
+/* line 102, ../sass/pages/_sessionpage.scss */
 .committee .committee1, .committee .committee2, .committee .committee3, .committee .committee4 {
   width: 22%;
 }
 @media screen and (max-width: 425px) {
+  /* line 102, ../sass/pages/_sessionpage.scss */
   .committee .committee1, .committee .committee2, .committee .committee3, .committee .committee4 {
     width: 90%;
     margin: 0px auto;
     padding-bottom: 10%;
   }
 }
-.committee .committee1 img, .committee .committee2 img, .committee .committee3 img, .committee .committee4 img {
-  width: 100%;
-  height: 178px;
+/* line 109, ../sass/pages/_sessionpage.scss */
+.committee .committee1 .committee-img, .committee .committee2 .committee-img, .committee .committee3 .committee-img, .committee .committee4 .committee-img {
+  height: 156px;
 }
+/* line 111, ../sass/pages/_sessionpage.scss */
+.committee .committee1 .committee-img img, .committee .committee2 .committee-img img, .committee .committee3 .committee-img img, .committee .committee4 .committee-img img {
+  width: 100%;
+  height: 100%;
+}
+/* line 116, ../sass/pages/_sessionpage.scss */
 .committee .committee1 h3, .committee .committee2 h3, .committee .committee3 h3, .committee .committee4 h3 {
   text-align: left;
   margin: 0px;
@@ -714,25 +1217,34 @@ img.image-style-banner {
   padding-top: 12%;
 }
 @media screen and (max-width: 425px) {
+  /* line 116, ../sass/pages/_sessionpage.scss */
   .committee .committee1 h3, .committee .committee2 h3, .committee .committee3 h3, .committee .committee4 h3 {
     padding-bottom: 0px;
     padding-top: 6%;
   }
 }
+/* line 128, ../sass/pages/_sessionpage.scss */
 .committee .committee1 p, .committee .committee2 p, .committee .committee3 p, .committee .committee4 p {
   color: gray;
 }
 @media screen and (max-width: 425px) {
+  /* line 128, ../sass/pages/_sessionpage.scss */
   .committee .committee1 p, .committee .committee2 p, .committee .committee3 p, .committee .committee4 p {
     margin-top: 3%;
   }
 }
 
+/*------------------------------------*\
+    * @file
+    * About Us Page.
+\*------------------------------------*/
 @media screen and (max-width: 425px) {
+  /* line 6, ../sass/pages/_aboutpage.scss */
   .pune-drupal-group {
     padding-top: 10%;
   }
 }
+/* line 10, ../sass/pages/_aboutpage.scss */
 .pune-drupal-group h2 {
   font-size: 32px;
   color: #0a6cc1;
@@ -742,6 +1254,7 @@ img.image-style-banner {
   font-size: 28px;
   margin: 3% 0;
 }
+/* line 15, ../sass/pages/_aboutpage.scss */
 .pune-drupal-group p {
   width: 80%;
   margin: 0 auto;
@@ -750,49 +1263,59 @@ img.image-style-banner {
   margin-bottom: 2%;
 }
 
+/* line 23, ../sass/pages/_aboutpage.scss */
 .what-should-wrapper {
   background-color: #eef2f3;
   padding-bottom: 5%;
   margin: 3% 0;
 }
+/* line 27, ../sass/pages/_aboutpage.scss */
 .what-should-wrapper .what-should {
   background-color: #eef2f3;
   display: flex;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
 @media screen and (max-width: 768px) {
+  /* line 27, ../sass/pages/_aboutpage.scss */
   .what-should-wrapper .what-should {
     width: 90%;
     justify-content: space-around;
   }
 }
 @media screen and (max-width: 425px) {
+  /* line 27, ../sass/pages/_aboutpage.scss */
   .what-should-wrapper .what-should {
     display: block;
   }
 }
+/* line 38, ../sass/pages/_aboutpage.scss */
 .what-should-wrapper .what-should .bring, .what-should-wrapper .what-should .expect {
   width: 50%;
 }
 @media screen and (max-width: 768px) {
+  /* line 38, ../sass/pages/_aboutpage.scss */
   .what-should-wrapper .what-should .bring, .what-should-wrapper .what-should .expect {
     width: 45%;
   }
 }
 @media screen and (max-width: 425px) {
+  /* line 38, ../sass/pages/_aboutpage.scss */
   .what-should-wrapper .what-should .bring, .what-should-wrapper .what-should .expect {
     width: 100%;
     padding: 3% 0;
   }
 }
+/* line 47, ../sass/pages/_aboutpage.scss */
 .what-should-wrapper .what-should .bring h2, .what-should-wrapper .what-should .expect h2 {
   font-size: 12px;
   color: #0a6cc1;
   text-align: center;
   text-transform: uppercase;
   margin-top: 10%;
+  padding-bottom: 15px;
 }
+/* line 55, ../sass/pages/_aboutpage.scss */
 .what-should-wrapper .what-should .bring p, .what-should-wrapper .what-should .expect p {
   border: 1px solid white;
   box-shadow: -3px 3px 6px #888888;
@@ -804,26 +1327,37 @@ img.image-style-banner {
   color: gray;
   text-align: center;
 }
+/* line 65, ../sass/pages/_aboutpage.scss */
 .what-should-wrapper .what-should .bring a, .what-should-wrapper .what-should .expect a {
   text-decoration: none;
   color: #0a6cc1;
 }
 
+/* line 74, ../sass/pages/_aboutpage.scss */
 #block-codeofconduct p {
   width: 12%;
   margin: 2% auto;
 }
+@media screen and (max-width: 1024px) {
+  /* line 74, ../sass/pages/_aboutpage.scss */
+  #block-codeofconduct p {
+    width: 20%;
+  }
+}
 @media screen and (max-width: 768px) {
+  /* line 74, ../sass/pages/_aboutpage.scss */
   #block-codeofconduct p {
     width: 100%;
     text-align: center;
   }
 }
 @media screen and (max-width: 425px) {
+  /* line 74, ../sass/pages/_aboutpage.scss */
   #block-codeofconduct p {
     padding: 8% 0;
   }
 }
+/* line 88, ../sass/pages/_aboutpage.scss */
 #block-codeofconduct a {
   border: 2px solid #e6103e;
   text-decoration: none;
@@ -833,6 +1367,7 @@ img.image-style-banner {
   padding: 13px 23px;
 }
 
+/* line 99, ../sass/pages/_aboutpage.scss */
 .drupal-camp-pune h2 {
   font-size: 30px;
   color: #0a6cc1;
@@ -840,69 +1375,96 @@ img.image-style-banner {
   text-transform: uppercase;
   margin-top: 6%;
 }
+/* line 106, ../sass/pages/_aboutpage.scss */
 .drupal-camp-pune p {
   width: 60%;
   margin: 0 auto;
+  margin: 20px auto;
   color: gray;
   text-align: center;
   margin-bottom: 4%;
 }
+@media screen and (max-width: 1024px) {
+  /* line 106, ../sass/pages/_aboutpage.scss */
+  .drupal-camp-pune p {
+    margin: 30px auto;
+  }
+}
 @media screen and (max-width: 425px) {
+  /* line 106, ../sass/pages/_aboutpage.scss */
   .drupal-camp-pune p {
     width: 90%;
   }
 }
+/* line 119, ../sass/pages/_aboutpage.scss */
 .drupal-camp-pune .image-wrapper {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
 }
 @media screen and (max-width: 768px) {
+  /* line 119, ../sass/pages/_aboutpage.scss */
   .drupal-camp-pune .image-wrapper {
     width: 100%;
   }
 }
 @media screen and (max-width: 425px) {
+  /* line 119, ../sass/pages/_aboutpage.scss */
   .drupal-camp-pune .image-wrapper {
     width: 90%;
     display: block;
   }
 }
+/* line 130, ../sass/pages/_aboutpage.scss */
 .drupal-camp-pune .image-wrapper .camp-image1, .drupal-camp-pune .image-wrapper .camp-image2, .drupal-camp-pune .image-wrapper .camp-image3 {
   width: 30%;
 }
 @media screen and (max-width: 425px) {
+  /* line 130, ../sass/pages/_aboutpage.scss */
   .drupal-camp-pune .image-wrapper .camp-image1, .drupal-camp-pune .image-wrapper .camp-image2, .drupal-camp-pune .image-wrapper .camp-image3 {
     padding-bottom: 8%;
     width: 100%;
   }
 }
+/* line 136, ../sass/pages/_aboutpage.scss */
 .drupal-camp-pune .image-wrapper .camp-image1 img, .drupal-camp-pune .image-wrapper .camp-image2 img, .drupal-camp-pune .image-wrapper .camp-image3 img {
   width: 100%;
   height: 210px;
 }
 @media screen and (max-width: 768px) {
+  /* line 136, ../sass/pages/_aboutpage.scss */
   .drupal-camp-pune .image-wrapper .camp-image1 img, .drupal-camp-pune .image-wrapper .camp-image2 img, .drupal-camp-pune .image-wrapper .camp-image3 img {
     height: 175px;
   }
 }
+/* line 143, ../sass/pages/_aboutpage.scss */
 .drupal-camp-pune .image-wrapper .camp-image1 h2, .drupal-camp-pune .image-wrapper .camp-image2 h2, .drupal-camp-pune .image-wrapper .camp-image3 h2 {
   color: #0a6cc1;
   font-size: 18px;
   text-align: left;
 }
+/* line 148, ../sass/pages/_aboutpage.scss */
 .drupal-camp-pune .image-wrapper .camp-image1 p, .drupal-camp-pune .image-wrapper .camp-image2 p, .drupal-camp-pune .image-wrapper .camp-image3 p {
   color: gray;
-  text-align: left;
+  text-align: inherit;
   margin: 0px;
+  width: 100%;
+}
+@media screen and (max-width: 1024px) {
+  /* line 148, ../sass/pages/_aboutpage.scss */
+  .drupal-camp-pune .image-wrapper .camp-image1 p, .drupal-camp-pune .image-wrapper .camp-image2 p, .drupal-camp-pune .image-wrapper .camp-image3 p {
+    margin: 10px 0;
+  }
 }
 @media screen and (max-width: 768px) {
+  /* line 148, ../sass/pages/_aboutpage.scss */
   .drupal-camp-pune .image-wrapper .camp-image1 p, .drupal-camp-pune .image-wrapper .camp-image2 p, .drupal-camp-pune .image-wrapper .camp-image3 p {
     font-size: 15px;
   }
 }
 @media screen and (max-width: 425px) {
+  /* line 148, ../sass/pages/_aboutpage.scss */
   .drupal-camp-pune .image-wrapper .camp-image1 p, .drupal-camp-pune .image-wrapper .camp-image2 p, .drupal-camp-pune .image-wrapper .camp-image3 p {
     width: 100%;
   }
